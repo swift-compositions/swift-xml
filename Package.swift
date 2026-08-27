@@ -16,41 +16,41 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/swift-primitives/swift-array-primitives.git",
+            url: "https://github.com/swift-molecules/swift-array.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-primitives/swift-input-primitives.git",
+            url: "https://github.com/swift-molecules/swift-input.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-primitives/swift-buffer-linear-primitives.git",
+            url: "https://github.com/swift-molecules/swift-buffer-linear.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-primitives/swift-ownership-shared-primitives.git",
+            url: "https://github.com/swift-molecules/swift-ownership-shared.git",
             branch: "main"
         ),
         .package(url: "https://github.com/swift-w3c/swift-w3c-xml.git", branch: "main"),
-        .package(url: "https://github.com/swift-foundations/swift-async.git", branch: "main"),
+        .package(url: "https://github.com/swift-compositions/swift-async.git", branch: "main"),
     ],
     targets: [
         .target(
             name: "XML",
             dependencies: [
-                .product(name: "Array Primitives", package: "swift-array-primitives"),
-                .product(name: "Input Slice Primitives", package: "swift-input-primitives"),
+                .product(name: "Array", package: "swift-array"),
+                .product(name: "Input Slice", package: "swift-input"),
                 .product(
                     name: "Buffer Linear Primitive",
-                    package: "swift-buffer-linear-primitives"
+                    package: "swift-buffer-linear"
                 ),
                 .product(
-                    name: "Buffer Linear Primitives",
-                    package: "swift-buffer-linear-primitives"
+                    name: "Buffer Linear",
+                    package: "swift-buffer-linear"
                 ),
                 .product(
                     name: "Ownership Shared Primitive",
-                    package: "swift-ownership-shared-primitives"
+                    package: "swift-ownership-shared"
                 ),
                 .product(name: "W3C XML", package: "swift-w3c-xml"),
                 .product(name: "Async", package: "swift-async"),

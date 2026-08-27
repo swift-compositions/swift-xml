@@ -1,7 +1,7 @@
-internal import Array_Primitives
+internal import Array
 internal import Buffer_Linear_Primitive
-internal import Buffer_Linear_Primitives
-internal import Input_Slice_Primitives
+internal import Buffer_Linear
+internal import Input_Slice
 internal import Ownership_Shared_Primitive
 import W3C_XML
 
