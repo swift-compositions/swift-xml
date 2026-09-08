@@ -32,7 +32,7 @@ let package = Package(
             branch: "main"
         ),
         .package(url: "https://github.com/swift-w3c/swift-w3c-xml.git", branch: "main"),
-        .package(url: "https://github.com/swift-compositions/swift-async.git", branch: "main"),
+        .package(url: "https://github.com/swift-molecules/swift-async-stream.git", branch: "main"),
     ],
     targets: [
         .target(
@@ -53,7 +53,7 @@ let package = Package(
                     package: "swift-ownership-shared"
                 ),
                 .product(name: "W3C XML", package: "swift-w3c-xml"),
-                .product(name: "Async", package: "swift-async"),
+                .product(name: "Async Stream", package: "swift-async-stream"),
             ]
         ),
         .testTarget(

@@ -1,4 +1,4 @@
-public import Async
+public import Async_Stream
 import W3C_XML
 
 extension XML {
