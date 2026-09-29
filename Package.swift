@@ -20,10 +20,6 @@ let package = Package(
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-molecules/swift-input.git",
-            branch: "main"
-        ),
-        .package(
             url: "https://github.com/swift-molecules/swift-buffer-linear.git",
             branch: "main"
         ),
@@ -39,7 +35,6 @@ let package = Package(
             name: "XML",
             dependencies: [
                 .product(name: "Array", package: "swift-array"),
-                .product(name: "Input Slice", package: "swift-input"),
                 .product(
                     name: "Buffer Linear Primitive",
                     package: "swift-buffer-linear"
