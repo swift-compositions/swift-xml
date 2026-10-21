@@ -1,6 +1,6 @@
 internal import Array
-internal import Buffer_Linear_Primitive
 internal import Buffer_Linear
+internal import Buffer_Linear_Primitive
 internal import Ownership_Shared_Primitive
 import W3C_XML
 
